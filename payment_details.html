@@ -1,0 +1,72 @@
+<?php
+include_once('userloggedin.php')
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Us - Love Fruit &amp; Veg</title>
+    <meta name="description" content="Our team and LF&amp;V will always be on hand to provide you with fresh fruit and veg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="#">Love Fruit &amp; Veg</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-2">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="shopping-cart.php">My Basket</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="catalog-page.php">products</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page contact-us-page">
+        <section class="clean-block clean-form dark" style="background-image: url(&quot;assets/img/project/background.jpg&quot;);">
+            <div class="container">
+                <div class="block-heading"></div>
+                <form name="paymentform" action="payment_details.php" method="post">
+                    <h2 class="text-info" style="color: rgb(0,123,255);">Payment details</h2>
+                    <p>Please enter the payment details for your order</p>
+<label for="card_type">Card Type:</label>
+                    <select id="card_type" name="card_type">
+                      <option value="VISA DEBIT">VISA DEBIT</option>
+                      <option value="VISA">VISA</option>
+                      <option value="MASTERCARD">MASTERCARD</option>
+                      <option value="LFVGIFTCARD">LFV GIFT CARD</option>
+                    </select>
+
+                    <div class="form-group"><input class="form-control" name="card_no" placeholder="Card Number"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="exp_month" placeholder="Expiry month - (format 00)"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="exp_year" placeholder="Expiry year - (format 0000)"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="issue_no" placeholder="Issue number - if applicable"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="sec_no" placeholder="Security Number (3 digits on back of card)"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="fname" placeholder="Cardholder first name"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="lname" placeholder="Cardholder last name"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="postcode" placeholder="Cardholder postcode"  type="text"></div>
+                    <div class="form-group"><input class="form-control" name="name_no" placeholder="Cardholder house name/number"  type="text"></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Confirm Order</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
